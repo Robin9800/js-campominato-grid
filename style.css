@@ -1,0 +1,12 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#grid{
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: aqua;
+}
