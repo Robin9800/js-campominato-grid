@@ -15,8 +15,11 @@ const totalCells = column * row;
  Usiamo il ciclo for.*/
 for(let i= 0; i < totalCells; i++){
 
-    
+    //Creo la cella
     const cell = createCell();
+
+    //Inserisco in ogni cella un testo che rappresenta un numero in ordine crescente.
+    cell.innerText = (i+1)
 
     /*Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
     Aggiungiamo l'evento all'interno del ciclo for perchè deve essere ripetuto per ogni cella.*/
