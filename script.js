@@ -17,6 +17,10 @@ for(let i= 0; i < totalCells; i++){
 
     //Ora creo la cella. Creano nel documento un div
     const cell = document.createElement('div');
-    //Aggiungiamo a "cell" una classe e ricreiamo la stessa classe nel css
+
+    //Aggiungiamo a "cell" una classe e ricreiamo la stessa classe nel css.
     cell.classList.add('cell');
+
+    //Inseriamo la cella all'interno del documento, dentro "grid".
+    grid.appendChild(cell);
 }
