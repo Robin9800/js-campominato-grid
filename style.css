@@ -9,7 +9,7 @@
     width: 500px;
     height: 500px;
     margin: 50px auto;
-    background-color: aqua;
+    background-color: rgb(253, 228, 0);
     display: flex;
     flex-wrap: wrap;
 }
@@ -18,4 +18,8 @@
     width: calc(100% / 8);
     height: calc(100% / 8);
     border: 1px solid black;
+}
+
+.cell.bg-aqua{
+    background-color: aqua;
 }

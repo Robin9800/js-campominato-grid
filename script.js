@@ -18,14 +18,24 @@ for(let i= 0; i < totalCells; i++){
     
     const cell = createCell();
 
+    /*Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
+    Aggiungiamo l'evento all'interno del ciclo for perchè deve essere ripetuto per ogni cella.*/
+    cell.addEventListener('click', function(){
+
+        //"toggle" spegne o accende lo stile.
+        cell.classList.toggle('bg-aqua');
+    })
+
     //Inseriamo la cella all'interno del documento, dentro "grid".
     grid.appendChild(cell);
 }
 
 //Creaimo una funziona per creare la cella.
 function createCell(){
+
     //Ora creo la cella. Creano nel documento un div
     const item = document.createElement('div');
+    
      //Aggiungiamo a "cell" una classe e ricreiamo la stessa classe nel css.
     item.classList.add('cell');
     return item
