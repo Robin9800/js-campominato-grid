@@ -3,7 +3,7 @@
 Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.*/
 
 
-//Creo una griglia 8x8.
+//Creo una griglia 10x10.
 const grid = document.getElementById('grid');
 
 const column = 10;
