@@ -4,9 +4,16 @@
     box-sizing: border-box;
 }
 
+/*CONTENT*/
 #grid{
     width: 500px;
     height: 500px;
     margin: 50px auto;
     background-color: aqua;
+}
+
+.cell{
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    border: 1px solid black;
 }
