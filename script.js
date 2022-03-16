@@ -6,8 +6,8 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.*/
 //Creo una griglia 8x8.
 const grid = document.getElementById('grid');
 
-const column = 8;
-const row = 8;
+const column = 10;
+const row = 10;
 
 const totalCells = column * row;
 
@@ -22,7 +22,7 @@ for(let i= 0; i < totalCells; i++){
     Aggiungiamo l'evento all'interno del ciclo for perchè deve essere ripetuto per ogni cella.*/
     cell.addEventListener('click', function(){
 
-        //"toggle" spegne o accende lo stile.
+        //"toggle" accende o spegne lo stile.
         cell.classList.toggle('bg-aqua');
     })
 
@@ -35,7 +35,7 @@ function createCell(){
 
     //Ora creo la cella. Creano nel documento un div
     const item = document.createElement('div');
-    
+
      //Aggiungiamo a "cell" una classe e ricreiamo la stessa classe nel css.
     item.classList.add('cell');
     return item
